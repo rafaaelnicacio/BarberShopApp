@@ -1,15 +1,14 @@
 import React from 'react'
-import { NavigationContainer} from '@react-navigation/native'
-import {Text} from 'react-native'
-
+import { NavigationContainer } from '@react-navigation/native'
+import UserContextProvider from './store/index'
 import ApplicationNavigator from './routes/index.routes'
 
 export default () => {
     return (
-        <NavigationContainer>
-            <ApplicationNavigator/>
-
-            
-        </NavigationContainer>
+        <UserContextProvider>
+          <NavigationContainer>
+            <ApplicationNavigator />
+          </NavigationContainer>
+        </UserContextProvider>
     )
 }
