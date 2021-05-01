@@ -74,9 +74,10 @@ const HomeScreen = () => {
     getBarbers()
   }, [])
 
-const onRefresh = () => {
-  
-} 
+  const onRefresh = () => {
+    setRefreshing(false)
+    getBarbers()
+  } 
 
   // return <TouchableOpacity style={{height: 80, width: 80, backgroundColor: 'red'}} onPress={async() => {
   //   await AsyncStorage.removeItem('token')
@@ -86,7 +87,7 @@ const onRefresh = () => {
   // </TouchableOpacity>;
   return (
     <Container>
-      <Scroller RefreshControl={
+      <Scroller refreshControl={
         <RefreshControl refreshing={refreshing} onRefresh={onRefresh}/>
       }>
         <HeaderArea>
