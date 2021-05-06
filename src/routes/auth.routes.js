@@ -4,7 +4,7 @@ import { PreloadScreen, SignInScreen, SignUpScreen } from '../screens';
 
 
 const Stack = createStackNavigator();
-
+ 
 export default () => (
     <Stack.Navigator
     initialRouteName="PreloadScreen"

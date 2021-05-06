@@ -93,6 +93,9 @@ const HomeScreen = () => {
     setCoords({})
     getBarbers()
  }
+ React.useEffect (() => {
+  handleLocationFinder(getBarbers())
+ },[])
  
 
   return (
