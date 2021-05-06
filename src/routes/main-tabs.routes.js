@@ -6,7 +6,7 @@ import Appointments from '../screens/Appointments'
 import Favorites from '../screens/Favorites'
 import Profile from '../screens/Profile'
 import CustomTab from '../components/CustomTab'
-
+import Barber from '../screens/Barber'
 const Tab = createBottomTabNavigator()
 
 const MainRoutes = () => {
@@ -17,6 +17,7 @@ const MainRoutes = () => {
         <Tab.Screen name= "Appointments" component={Appointments}/>
         <Tab.Screen name= "Favorites" component={Favorites}/>
         <Tab.Screen name= "Profile" component={Profile}/>
+        <Tab.Screen name="Barber" component={Barber}/>
     </Tab.Navigator>
   )
 }

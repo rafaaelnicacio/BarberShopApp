@@ -43,9 +43,6 @@ export default ({ state, navigation}) => {
     const goTo = (screenName) =>{
         navigation.navigate(screenName)
     }
-    React.useEffect(()=>{
-        console.log()
-    },[])
 
     return (
         <TabArea>

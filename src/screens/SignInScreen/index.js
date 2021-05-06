@@ -24,8 +24,10 @@ const SignInScreen = () => {
   const {setAvatar,setToken} = useUser()
   
   const navigation = useNavigation()
-  const [emailField, SetEmailField] = React.useState('')
-  const [passwordField, SetPasswordField] = React.useState('')
+  const [emailField, SetEmailField] = React.useState('rafaelnicacio154@gmail.com')
+  const [passwordField, SetPasswordField] = React.useState('123')
+
+  
   
 
   const handleSignClick = async() =>{

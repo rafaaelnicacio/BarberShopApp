@@ -1,5 +1,4 @@
 import React, {useEffect} from 'react';
-import AssyncStorage from '@react-native-community/async-storage'
 import { Container, LoadingIcon } from './style';
 import Barberlogo from '../../assets/images/barber.svg'
 import {useNavigation} from '@react-navigation/native'
