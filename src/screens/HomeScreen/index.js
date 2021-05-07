@@ -21,13 +21,11 @@ import {
 
 } from './style';
 import {useNavigation} from '@react-navigation/native'
-import { useUser } from '../../store/user'
 
 import SearchIcon from '../../assets/images/search.svg'
 import MyLocationIcon from '../../assets/images/my_location.svg'
 
 const HomeScreen = () => {
-  const {setToken} = useUser()
   const navigation = useNavigation('')
   const [locationText, setLocationText] = React.useState('')
   const [loading, setLoading] = React.useState(false)

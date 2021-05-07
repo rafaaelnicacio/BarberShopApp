@@ -1,10 +1,13 @@
 import React from 'react';
-import { View } from 'react-native';
-
-// import { Container } from './styles';
+import  {Container}  from './style';
+import BarberItem from '../../components/BarberItem';
 
 const Search = () => {
-  return <View />;
+  return (
+    <Container>
+      <BarberItem />
+    </Container>
+  );
 }
 
 export default Search;
