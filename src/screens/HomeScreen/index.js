@@ -21,6 +21,7 @@ import {
 
 } from './style';
 import {useNavigation} from '@react-navigation/native'
+import { useUser } from '../../store/user'
 
 import SearchIcon from '../../assets/images/search.svg'
 import MyLocationIcon from '../../assets/images/my_location.svg'
@@ -62,9 +63,9 @@ const HomeScreen = () => {
     
     if(!coords){
       setLoading(false)
-      return{
-      }
+      
     }
+    
     if(coords){
       lat = coords.latitude
       lng = coords.longitude
@@ -92,7 +93,7 @@ const HomeScreen = () => {
     getBarbers()
  }
  React.useEffect (() => {
-  handleLocationFinder(getBarbers())
+  handleLocationFinder()
  },[])
  
 
